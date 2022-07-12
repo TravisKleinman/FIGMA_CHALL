@@ -637,8 +637,9 @@ body {
 }
 
 .user_name {
+  display: flex;
   flex: 1;
-  text-align: end;
+  justify-content: right;
 }
 
 .user_icon {
