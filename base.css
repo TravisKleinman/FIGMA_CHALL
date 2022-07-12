@@ -39,6 +39,7 @@ body {
 }
 
 .sideNav_Layout {
+  position: relative;
   width: 224px;
   background-color: #343951;
   padding: 40px;
@@ -139,7 +140,7 @@ body {
 
 .white_text_circle {
   color: #FFFFFF;
-  margin: 3px;
+  padding: 2.5px;
   text-align: center;
 }
 
@@ -361,6 +362,16 @@ body {
 
 /* Side Nav Styles */
 
+.indicator {
+  height: 24px;
+  width: 4px;
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0 4px 4px 0;
+  left: 0; 
+  top: 120px;
+}
+
 .row_wrapper_top_nav {
   display: flex;
   flex-flow: row nowrap;
@@ -547,7 +558,7 @@ body {
   width: 256px;
   height: 136px;
   margin-top: 24px;
-  padding: 24px 24px 24px 16px;
+  padding: 24px;
   justify-content: space-between;
 }
 
