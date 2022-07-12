@@ -15,13 +15,20 @@ body {
 .root {
   display: flex;
   height: 100vh;
+  overflow-x: hidden;
 }
+
+/* .scrollbar {
+  display: flex;
+  overflow-y: auto;
+  flex: 1;
+} */
 
 .body_Layout {
   padding: 40px;
   background-color: #F5F6FC;
   flex: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -32,7 +39,7 @@ body {
 }
 
 .sideNav_Layout {
-  width: 250px;
+  width: 224px;
   background-color: #343951;
   padding: 40px;
   display: flex;
@@ -49,6 +56,8 @@ body {
   flex-flow: column;
   align-items: center;
   flex-shrink: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Coloring styles */
@@ -177,6 +186,10 @@ body {
 .fake_atag:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.nav_button {
+  margin-top: 32px;
 }
 
 .button {
@@ -348,18 +361,21 @@ body {
 
 /* Side Nav Styles */
 
+.row_wrapper_top_nav {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 24px;
+}
 
 .topNav {
   display: flex;
   flex-flow: column;
-  gap: 20px;
   flex: 1;
 }
 
 .botNav {
   display: flex;
   flex-flow: column;
-  gap: 30px;
 }
 
 .borderBox {
@@ -398,6 +414,7 @@ body {
   width: 144px;
   background: linear-gradient(90deg, #FF9F00 0%, #FF6860 50%, #689FF8 100%);
   border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 .gradient_box_right {
@@ -573,13 +590,14 @@ body {
 
 .divider_line {
   border: 1px #C8CCDB solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content_area {
   display: flex;
   flex-flow: column;
   flex: 1;
-  gap: 20px;
   margin-top: 51px;
 }
 
@@ -613,3 +631,4 @@ body {
 .user_icon {
   margin-left: 18px;
 }
+
